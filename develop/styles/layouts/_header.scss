@@ -1,0 +1,64 @@
+.top-header {
+    width: 100%;
+    padding: 20px 0 0 0;
+    
+}
+
+@include media-breakpoint-down(md) {
+    .navbar-collapse {
+        background-color: $grey-bg;
+        padding: 0 20px;
+    }
+}
+
+/*************************
+    LANGUAGE DROPDOWN
+************************/
+.language-dropdown {
+    flex: 0 0 100%;
+
+    @include media-breakpoint-up(lg) {
+        border-left: 2px solid $red;
+        margin: 0 15px 0 9px;
+        flex: 0 0 auto;
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-down(md) {
+            display: inline-block;
+        }
+    }
+
+    .dropdown-toggle {
+        font-size: 18px;
+        padding: 10px 5px 10px 13px;
+
+        &:after {
+            border: 2px solid #fff;
+            border-top: 0;
+            border-right: 0;
+            transform: rotate(-45deg);
+            width: 14px;
+            height: 14px;
+            margin: 0 0 0 4px;
+        }
+    }
+
+    .dropdown-menu {
+        min-width: 65px;
+
+        .dropdown-item {
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+
+    &.show {
+        .dropdown-toggle {
+
+            &:after {
+                transform: rotate(135deg) translateX(3px) translateY(-6px);
+            }
+        }
+    }
+}

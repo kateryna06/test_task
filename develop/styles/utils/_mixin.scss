@@ -1,0 +1,12 @@
+@function rem($px){
+	@return $px / 16px + 0rem;
+}
+
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

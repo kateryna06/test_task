@@ -1,0 +1,61 @@
+a {
+    color: $grey;
+    outline: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn {
+    display: block;
+    color: #fff;
+    position: relative;
+    font-size: $btn-size;
+    border-radius: 3px;
+    padding: rem(11px) 5px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &-sm {
+        font-size: $small-btn-size;
+        font-family: Roboto, sans-serif;
+        font-weight: $font-regular;
+        padding: 12px 10px;
+    }
+}
+
+/*GREY BUTTON*/
+.btn-outline-white {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+
+    &:hover {
+        color: $grey;
+        background-color: #fff;
+    }
+}
+
+/*GREEN BUTTON*/
+.btn-green{
+	background-color: $green;
+	color: #fff;
+
+	&:hover{
+		background-color: darken( $green, 10% )
+	}
+}
